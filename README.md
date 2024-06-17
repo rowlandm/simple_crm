@@ -2,7 +2,7 @@
 
 Based off this article for [Hello World](https://www.slingacademy.com/article/write-your-first-backend-api-with-fastapi-hello-world/)
 
-Also based off this article for [using postgresql database](https://mattermost.com/blog/building-a-crud-fastapi-app-with-sqlalchemy/)
+Also based off this article for [using postgresql database](https://mattermost.com/blog/building-a-crud-fastapi-app-with-sqlalchemy/) and [the repo on Github](https://github.com/EzzEddin/fastapi-todo)
 
 
 python3 -m venv env
