@@ -2,8 +2,19 @@ from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 import sqlite3
 from typing import List, Optional
+from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()
+
+# Allow all origins (for development, consider restricting to specific origins in production)
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["http://localhost:8080"],  # Replace with your Svelte app's development URL
+    allow_credentials=True,
+    allow_methods=["GET", "POST", "PUT", "DELETE"],
+    allow_headers=["*"],
+)
+
 
 DATABASE = 'data/data_simple_crm.db'
 
