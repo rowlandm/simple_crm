@@ -1,8 +1,14 @@
 <!-- src/App.svelte -->
 <script>
+  import { Router, Link, Route } from 'svelte-routing';
+  import AddPerson from './routes/AddPerson.svelte';
+
+
   import { onMount } from 'svelte';
   import Table from './components/Table.svelte';
   import { getUsers } from './services/UserService';
+
+
 
   let users = [];
 
@@ -16,10 +22,15 @@
   });
 </script>
 
+
 <main>
   <h1>User List</h1>
   <Table {users} />
 </main>
+
+
+
+
 
 <style>
   main {
