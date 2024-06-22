@@ -66,7 +66,7 @@
   </thead>
   <tbody>
     {#each users as user}
-      {#if user.full_name.toLowerCase().includes(searchTerm.toLowerCase())}
+      {#if user.job_title.toLowerCase().includes(searchTerm.toLowerCase())||user.full_name.toLowerCase().includes(searchTerm.toLowerCase()) || user.email.includes(searchTerm.toLowerCase())}
       <tr>
         <td>{user.id}</td>
         <td>{user.full_name}</td>
