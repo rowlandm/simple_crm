@@ -28,3 +28,8 @@ mkdir data
 git clone git@github.com:rowlandm/simple_crm_test_data.git data
 
 This should put data_simple_crm.db under the simple_crm/data directory
+
+
+# Front End application in Nuxt
+
+Go to [simple_crm_frontend](https://github.com/rowlandm/simple_crm_frontend) for more details.
