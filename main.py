@@ -9,7 +9,7 @@ app = FastAPI()
 # Allow all origins (for development, consider restricting to specific origins in production)
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:8080"],  # Replace with your Svelte app's development URL
+    allow_origins=["http://localhost:3000"],  # Replace with your Svelte app's development URL
     allow_credentials=True,
     allow_methods=["GET", "POST", "PUT", "DELETE"],
     allow_headers=["*"],
