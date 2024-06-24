@@ -15,7 +15,7 @@ uvicorn main:app --reload
 
 
 
-# simple_crm_test_data
+# Setup data
 
 This is part of the [simple_crm_test_data repo](https://github.com/rowlandm/simple_crm_test_data).
 
